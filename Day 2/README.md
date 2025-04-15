@@ -70,3 +70,74 @@ Step 5: access the nodejs application from browser
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
+
+
+![Screenshot 2025-04-08 215402](https://github.com/user-attachments/assets/236ddc5e-3ed2-496f-a87a-1added248415)
+
+
+
+
+
+# Kubernetes Deployment for MongoDB and Web Application
+
+## Overview
+This project demonstrates how to deploy MongoDB and a web application using Kubernetes. The deployment includes configuration files for MongoDB and the web application, ensuring they are properly set up and connected within the Kubernetes cluster.
+
+## Prerequisites
+- Kubernetes cluster set up and running
+- kubectl installed and configured to interact with your Kubernetes cluster
+
+## Project Structure
+The project consists of the following YAML files:
+- **mongo-deployment.yaml**: Defines the MongoDB deployment.
+- **mongo-service.yaml**: Defines the service for MongoDB.
+- **mongo-config.yaml**: Contains configuration settings for MongoDB.
+- **mongo.yaml**: Combines MongoDB deployment and service configurations.
+- **weapp.yaml**: Defines the deployment and service for the web application.
+
+## Steps to Deploy MongoDB and Web Application
+
+### Step 1: Deploy MongoDB
+1. **Create MongoDB Deployment**:
+   - Apply the `mongo-deployment.yaml` file to create the MongoDB deployment.
+   ```sh
+   kubectl apply -f mongo-deployment.yaml
+   ```
+   Create MongoDB Service:
+
+2.Apply the mongo-service.yaml file to create the service for MongoDB.
+
+Configure MongoDB:
+Apply the mongo-config.yaml file to set up the necessary configurations for MongoDB.
+
+Combined MongoDB Setup:
+Alternatively, you can apply the mongo.yaml file which combines the deployment and service configurations for MongoDB.
+
+### Step 2: Deploy Web Application
+Create Web Application Deployment and Service:
+Apply the weapp.yaml file to deploy the web application and create its service.
+
+### Step 3: Verify Deployments
+Check MongoDB Deployment:
+Verify that the MongoDB deployment is running successfully.
+
+Check MongoDB Service:
+Verify that the MongoDB service is running and accessible.
+
+Check Web Application Deployment:
+Verify that the web application deployment is running successfully.
+
+Check Web Application Service:
+Verify that the web application service is running and accessible.
+
+### Step 4: Access the Application
+Access MongoDB:
+
+MongoDB will be accessible within the cluster through the service defined in mongo-service.yaml.
+Access Web Application:
+
+The web application will be accessible through the service defined in weapp.yaml. You can use the external IP or port specified in the service configuration to access the application.
+### Conclusion
+This project demonstrates how to deploy MongoDB and a web application using Kubernetes.
+
+
