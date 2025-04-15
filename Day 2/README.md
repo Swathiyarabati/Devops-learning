@@ -141,3 +141,4 @@ The web application will be accessible through the service defined in weapp.yaml
 This project demonstrates how to deploy MongoDB and a web application using Kubernetes.
 
 
+![Screenshot 2025-04-15 130224](https://github.com/user-attachments/assets/8a3775fa-991c-4a23-a4b6-93dc4d3f0a0a)
