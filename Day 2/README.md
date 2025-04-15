@@ -1,4 +1,4 @@
-### Repository for the K8s in 1 hour video
+
 
 #### K8s manifest files 
 * mongo-config.yaml
